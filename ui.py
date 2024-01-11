@@ -33,11 +33,22 @@ image5 = pygame.transform.scale(image5, (115, 115))
 
 # Game loop
 while True:
-    # Handle events
+    x, y = pygame.mouse.get_pos()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+        elif event.type == pygame.MOUSEBUTTONDOWN and x>50 and x<240 and y>50 and y<100:
+            print('English')
+        elif event.type == pygame.MOUSEBUTTONDOWN and x>450 and x<640 and y>50 and y<100:
+            print('Spanish')
+        elif event.type == pygame.MOUSEBUTTONDOWN and x>50 and x<200 and y>450 and y<560:
+            print('tour')
+        elif event.type == pygame.MOUSEBUTTONDOWN and x>450 and x<560 and y>450 and y<560:
+            print('lunch')
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            print(f"Mouse Clicked at ({mouse_x}, {mouse_y})")
 
     # Update game logic here
 
