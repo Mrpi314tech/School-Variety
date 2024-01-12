@@ -116,7 +116,7 @@ while True:
         elif event.type == pygame.MOUSEBUTTONDOWN and x>450 and x<640 and y>50 and y<100:
             chat_spanish()
         elif event.type == pygame.MOUSEBUTTONDOWN and x>50 and x<200 and y>450 and y<560:
-            os.system('xdg-open https://mrpi314.com')
+            os.system('xdg-open https://docs.google.com/presentation/d/1TQq5VOSrSNFBaLNt8m_ZsqAhhy8yWGqzaN_cVuNl5bE/edit?usp=sharing')
         elif event.type == pygame.MOUSEBUTTONDOWN and x>450 and x<560 and y>450 and y<560:
             os.system('xdg-open https://forms.gle/SyVGtpFjbfy64GUf8')
         elif event.type == pygame.MOUSEBUTTONDOWN:
