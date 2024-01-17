@@ -12,7 +12,7 @@ def speak(say):
     engine.runAndWait()
 
     
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=" Insert OpenAI key here ")
 def chat_english():
     messages = [ {"role": "system", "content": 
               "I am going to use you as a translator. Google translate is bad, as its AI is not as advanced as you. I want you to take my english input and translate it into proper spanish and proper grammar. There should be no context or explanantion, just the translation"} ]
